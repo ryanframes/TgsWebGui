@@ -1,0 +1,47 @@
+/* CSS Document */
+
+.daftar:link, .daftar:visited {
+	background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.daftar:hover {
+	background-color:#f45f36;
+}
+
+.btn_cari {
+	font-family: 'Quicksand';
+	background:no-repeat url(../img/icons8-Search-20.png) 7px;
+	padding-left:20px;
+	border:none;
+	background-color: #f44336;
+    color: white; /*font color*/
+	height:35px;
+	width:70px;
+    text-align: center;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+.btn_cari:hover {
+	background-color: #f45f36;
+}
+
+.btn_simpan {
+	border:none;
+	background-color: #f44336;
+    color: white; /*font color*/
+	height:35px;
+	width:70px;
+    text-align: center;
+	text-decoration:none;
+	cursor:pointer;	
+}
+
+.btn_simpan:hover {
+	background-color: #f45f36;
+}
