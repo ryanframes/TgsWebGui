@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>LowonganKerja.co.id | Cari dan Lamar Kerja</title>  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/DatePickerX.css">
+</head>
+<script src="js/DatePickerX.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', function()
+        {
+            var $min = document.querySelector('.real [name="realDPX-min"]'),
+                $max = document.querySelector('.real [name="realDPX-max"]');
+
+            $min.DatePickerX.init({
+                mondayFirst: true,
+                minDate    : new Date(2017, 8, 13),
+                maxDate    : $max
+            });
+
+            $max.DatePickerX.init({
+                mondayFirst: true,
+                minDate    : $min,
+                //maxDate    : new Date(2017, 4, 25)
+            });
+
+        });
+    </script>
+<style>
+	body, html {
+		height:100%;
+	}
+</style>
+<body>
+  <header style="border-bottom:4px solid #4985e5;">
+    <div style="padding-left:30px">
+      <h1 class="logo"><a href="index.html">lowongankerja.co.id</a></h1>      
+    </div>
+    <div style="width:50%;margin-left:50%;background-color:#0C0;">
+	    <h1 class="logo">Halaman Admin Perusahaan</h1>      
+    </div>
+  </header>
+<div style="width=1020px; height:90%;">
+	<div style="float:left; width:18%; height:100%; background-color:#4985e5;" >
+    	<div style="width:100%;height:200px;background-image:url(img/ZSoft-Gif.gif);background-repeat:no-repeat;background-size:70% 80%;background-position:center;">
+        </div>
+        <center style="width:auto; margin:5px 5px 30px 5px;color:#FFF;"><b>PT. Integrated System Consultant</b></center>
+        <ul class="pnl_login">
+            <li><a href="home_p.html" style="background:url(img/icons8-Home-26.png) no-repeat 7px; background-position:left;padding-left:25px;">Dashboard</a></li>
+            <li><a href="#" style="background:url(img/icons8-Front%20Desk-20.png) no-repeat 7px; background-position:left;padding-left:25px;">Ubah Profil</a></li>
+            <li class="current"><a href="loker_p.html" style="background:url(img/job.png) no-repeat 7px; background-position:left;padding-left:25px;">Pasang Loker</a></li>
+            <li><a href="#" style="background:url(img/icons8-Employee-20.png) no-repeat 7px; background-position:left;padding-left:25px;">Daftar Pelamar Kerja</a></li>
+            <li><a href="#" style="background:url(img/logout.png) no-repeat 7px; background-position:left;padding-left:25px;">Log Out</a></li>
+        </ul>
+    </div>
+    <div style="width:100%; height:100%;">
+    	<div style="width:100%;height:100%;">
+			<div style="border-bottom:2px solid #418ff4"><center style="padding-top:50px;">Pasang Lowongan Kerja</center></div>
+            <div class="container" style="padding-left:400px;width:auto;height:auto;">
+                <form style="padding-top:20px;" >
+                    <input placeholder="Judul Loker" name="judul" type="text"; style="width:90%;">
+                    <br><br>
+                    <textarea class="ta" placeholder="Deskripsi Pekerjaan" name="deskripsi" cols="40" rows="5"></textarea>
+                    <br><br>
+                    <!-- untuk membuat datepicker -->
+                    <label class="real">
+                        <input type="text" name="realDPX-min" placeholder="Batas Tanggal Lamaran">
+                    </label>
+                    <div hidden="true" style="margin-top: 80vh;"> <!-- di hidden karena harus ada start and end, sedangkan hanya butuh start date saja -->
+                        <label class="real">
+                            <input type="text" name="realDPX-max" placeholder="Choice end date">
+                        </label>
+                    </div>
+                    <!-- akhir membuat datepicker -->
+                    <br><br>
+                    <select title="Jenis Industri" class="styled-select" style="width:90%;">
+                        <option value="0" disabled selected>Jenis Industri</option>
+                        <option value="akn">Akunting</option>
+                        <option value="adm">Admin & HRD</option>
+                        <option value="bnk">Perbankan / Keuangan</option>
+                        <option value="rwt">Perawatan Kecantikan / Kesehatan</option>
+                        <option value="kns">Konstruksi dan Bangunan</option>
+                        <option value="dsg">Desain</option>
+                        <option value="pnd">Pendidikan</option>
+                        <option value="tkn">Teknik</option>
+                        <option value="hsp">Hospitality / Makanan & Minuman</option>
+                        <option value="inf">Teknologi Informatika</option>
+                        <option value="asu">Asuransi</option>
+                        <option value="mnj">Manajemen</option>
+                        <option value="mnf">Manufakturing</option>
+                        <option value="pms">Pemasaran / Hubungan Masyarakat (Humas)</option>
+                        <option value="prk">Media & Periklanan</option>
+                        <option value="plk">Pelayanan Kesehatan</option>
+                        <option value="pdg">Perdagangan & Pembelian</option>
+                        <option value="prp">Properti</option>
+                        <option value="trn">Transportasi & Logistik</option>
+                        <option value="lai">Lain-lain</option>
+                    </select>
+                    <br><br>
+                    <input placeholder="Kategori" name="kategori" type="text"; style="width:90%;">
+                    <br><br>
+                    <select title="Syarat Pendidikan" class="styled-select" style="width:90%;">
+	                    <option value="0" disabled selected>Syarat Pendidikan</option>
+                        <option value="sd">SD</option>
+                        <option value="smp">SMP</option>
+                        <option value="smk">SMA/K</option>
+                        <option value="dp">Diploma</option>
+                        <option value="sj">Sarjana</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" class="btn_simpan" value="Simpan" style="width:90%;">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src='js/jquery.min.js'></script>
+<script  src="js/index.js"></script>
+</html>

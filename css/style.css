@@ -196,6 +196,16 @@ input[type="text"], [type="password"]{
 	opacity:0.75;
 }
 
+.ta {
+	font-family: 'Quicksand';
+	width:90%;
+	border:1px solid #87e0e5;
+	box-sizing:border-box;
+	border-radius:2px;
+	padding-left:10px;
+	opacity:0.75;
+}
+
 input[type="text"], [type="password"], [type="search"]:focus {
 	background-color: #FFF;
 	opacity: 0.90;
@@ -236,3 +246,25 @@ input[type="text"], [type="password"], [type="search"]:focus {
     text-indent: 0.5%;
     text-overflow: '';
    }
+   
+.pnl_login li {
+	padding:15px;
+	position:relative;
+	background-color:#42f4ee;	
+	color:#FFF;
+}
+
+.pnl_login li a {
+	color:#000;
+	text-decoration:none;
+}
+
+.pnl_login li:hover {
+	background-color:#FFF;
+	color:#000;
+	border-right:4px solid #0F0;
+}
+
+li.current {
+    border-right:4px solid #4985e5;
+}
