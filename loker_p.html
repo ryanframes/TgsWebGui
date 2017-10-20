@@ -1,34 +1,15 @@
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>LowonganKerja.co.id | Cari dan Lamar Kerja</title>  
+  <title>LowonganKerja.co.id | Pasang Lowongan Kerja</title>  
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/buttons.css">
   <link rel="stylesheet" href="css/DatePickerX.css">
 </head>
-<script src="js/DatePickerX.js"></script>
-    <script>
-        window.addEventListener('DOMContentLoaded', function()
-        {
-            var $min = document.querySelector('.real [name="realDPX-min"]'),
-                $max = document.querySelector('.real [name="realDPX-max"]');
-
-            $min.DatePickerX.init({
-                mondayFirst: true,
-                minDate    : new Date(2017, 8, 13),
-                maxDate    : $max
-            });
-
-            $max.DatePickerX.init({
-                mondayFirst: true,
-                minDate    : $min,
-                //maxDate    : new Date(2017, 4, 25)
-            });
-
-        });
-    </script>
+	<script src="js/DatePickerX.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
 <style>
 	body, html {
 		height:100%;
@@ -58,14 +39,14 @@
     </div>
     <div style="width:100%; height:100%;">
     	<div style="width:100%;height:100%;">
-			<div style="border-bottom:2px solid #418ff4"><center style="padding-top:50px;">Pasang Lowongan Kerja</center></div>
+			<div style="border-bottom:2px solid #418ff4"><center style="padding-top:25px;margin:auto 0 25px 0;"><b>- Pasang Lowongan Kerja -</b></center></div>
             <div class="container" style="padding-left:400px;width:auto;height:auto;">
                 <form style="padding-top:20px;" >
-                    <input placeholder="Judul Loker" name="judul" type="text"; style="width:90%;">
-                    <br><br>
-                    <textarea class="ta" placeholder="Deskripsi Pekerjaan" name="deskripsi" cols="40" rows="5"></textarea>
-                    <br><br>
+                    Judul Lowongan Pekerjaan :<p><input placeholder="Judul Loker" name="judul" type="text"; style="width:90%;">
+                    <p>
+                    Deskripsi Pekerjaan :<p><textarea class="ta" id="editor1" placeholder="Deskripsi Pekerjaan" name="deskripsi" cols="40" rows="5"></textarea><br>
                     <!-- untuk membuat datepicker -->
+                    Batas Tanggal Lamaran :<p>
                     <label class="real">
                         <input type="text" name="realDPX-min" placeholder="Batas Tanggal Lamaran">
                     </label>
@@ -75,9 +56,9 @@
                         </label>
                     </div>
                     <!-- akhir membuat datepicker -->
-                    <br><br>
+                    Jenis Industri :<p>
                     <select title="Jenis Industri" class="styled-select" style="width:90%;">
-                        <option value="0" disabled selected>Jenis Industri</option>
+                        <option value="0" disabled selected>Pilih</option>
                         <option value="akn">Akunting</option>
                         <option value="adm">Admin & HRD</option>
                         <option value="bnk">Perbankan / Keuangan</option>
@@ -99,25 +80,80 @@
                         <option value="trn">Transportasi & Logistik</option>
                         <option value="lai">Lain-lain</option>
                     </select>
-                    <br><br>
+                    <p>
+                    Kategori :<p>
                     <input placeholder="Kategori" name="kategori" type="text"; style="width:90%;">
-                    <br><br>
+                    <p>
+                    Syarat Pendidikan :<p>
                     <select title="Syarat Pendidikan" class="styled-select" style="width:90%;">
-	                    <option value="0" disabled selected>Syarat Pendidikan</option>
+	                    <option value="0" disabled selected>Pilih</option>
                         <option value="sd">SD</option>
                         <option value="smp">SMP</option>
                         <option value="smk">SMA/K</option>
                         <option value="dp">Diploma</option>
                         <option value="sj">Sarjana</option>
                     </select>
-                    <br><br>
-                    <input type="submit" class="btn_simpan" value="Simpan" style="width:90%;">
+                    <p>
+                    Kualifikasi / Keahlian yang dibutuhkan : <p>
+                    <textarea name="keahlian" placeholder="Kualifikasi / Keahlian yang dibutuhkan" cols="40" rows="5" style="width:90%"></textarea>
+                    <p>
+                    Level Posisi Pekerjaan :<p>
+                    <select title="Level Posisi" class="styled-select" style="width:90%;">
+	                    <option value="0" disabled selected>Pilih</option>
+                        <option value="top">CEO / GM / Director / Senior Manager</option>
+                        <option value="fg">Fresh Graduate</option>
+                        <option value="mng">Manager / Assistance Manager</option>
+                        <option value="stf">Staff (non-management & non-supervisor</option>
+                        <option value="spv">Supervisor / Coordinator</option>
+                    </select>
+                    <p>
+					Gaji :<p>
+                    <select title="Gaji" class="styled-select" style="width:90%;">
+	                    <option value="0">Negosiasi</option>
+                        <option value="1">Rp. 1.000.000 - Rp. 2.000.000</option>
+                        <option value="2">Rp. 2.000.000 - Rp. 4.000.000</option>
+                        <option value="3">Rp. 4.000.000 - Rp. 6.000.000</option>
+                        <option value="4">Rp. 6.000.000 - Rp. 10.000.000</option>
+                        <option value="spv">> Rp. 10.000.000</option>
+                    </select><p>
+                    Waktu Bekerja :<p>
+                    <input placeholder="Waktu Jam Kerja (Contoh : Jam 08.00 - 16.00)" name="waktu" type="text"; style="width:90%;"><p>
+                    Tipe Pekerjaan :<p>
+                    <select title="tipekerja" class="styled-select" style="width:90%;">
+	                    <option value="0" disabled selected>Pilih</option>
+                        <option value="frl">Freelance</option>
+                        <option value="ktr">Kontrak</option>
+                        <option value="mg">Magang</option>
+                        <option value="pt">Paruh Waktu / Part Time</option>
+                        <option value="ft">Purna Waktu / Full Time</option>
+                        <option value="ttp">Tetap</option>
+                    </select><p>
+                    <input type="submit" class="btn_simpan" value="Simpan" style="width:90.25%;">
                 </form>
             </div>
         </div>
     </div>
 </div>
 </body>
-<script src='js/jquery.min.js'></script>
-<script  src="js/index.js"></script>
+<script>
+	window.addEventListener('DOMContentLoaded', function()
+	{
+		var $min = document.querySelector('.real [name="realDPX-min"]'),
+			$max = document.querySelector('.real [name="realDPX-max"]');
+
+		$min.DatePickerX.init({
+			mondayFirst: true,
+			minDate    : new Date(2017, 8, 13),
+			maxDate    : $max
+		});
+
+		$max.DatePickerX.init({
+			mondayFirst: true,
+			minDate    : $min,
+			//maxDate    : new Date(2017, 4, 25)
+		});
+
+	});
+	CKEDITOR.replace( 'editor1' );
+  </script>
 </html>

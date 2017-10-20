@@ -21,8 +21,8 @@
 	box-sizing: content-box;
 	color: #fff;
 	display: none;
-	font: 18px/1 Arial;
-	padding: 10px;
+	font: 13px Arial;
+	padding: 8px;
 	position: absolute;
 	top: 100%;
 	-webkit-transform: translateY(15px);
@@ -116,7 +116,7 @@
 	display: flex;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap;
-	height: 288px;
+	height: 280px;
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;

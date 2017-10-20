@@ -10,6 +10,11 @@
   background-repeat:no-repeat;
 }
 
+@font-face {
+    font-family: 'Quicksand';
+    src: url(../fonts/Quicksand-Regular.ttf);
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
 }
@@ -196,6 +201,16 @@ input[type="text"], [type="password"]{
 	opacity:0.75;
 }
 
+textarea {
+	font-family: 'Quicksand';
+	width:300px;
+	border:1px solid #87e0e5;
+	box-sizing:border-box;
+	border-radius:2px;
+	padding-left:10px;
+	opacity:0.75;
+}
+
 .ta {
 	font-family: 'Quicksand';
 	width:90%;
@@ -211,7 +226,21 @@ input[type="text"], [type="password"], [type="search"]:focus {
 	opacity: 0.90;
 	border: 1px solid #41e1ea;
 }
-
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-style:italic;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    font-style:italic;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-style:italic;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-style:italic;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+    font-style:italic;
+}
 .text_cari {
 	font-family: 'Quicksand';
 	width:300px;
