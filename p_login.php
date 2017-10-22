@@ -19,7 +19,7 @@
   <main>
 
     <input id="tab1" type="radio" name="tabs" checked>
-    <label for="tab1" style="width:98%">Log In Pencari Kerja</label>
+    <label for="tab1" style="width:98%">Log In Perusahaan</label>
     
     <section id="content1" style="margin:auto; width:50%">
         <form style="padding-top:20px;" >
@@ -27,7 +27,7 @@
             <br><br>
             <input placeholder="Kata sandi" name="pswd" type="password"; style="width:90%;">
             <br><br>
-            <input type="submit" class="btn_simpan" value="Masuk" style="width:90%;">
+            <input type="submit" class="btn_simpan" value="Masuk" style="width:90%;" formaction="p_home.html">
         </form>
     </section>	
    </main>
