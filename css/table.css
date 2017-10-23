@@ -12,19 +12,17 @@ table{
   border: 1px solid rgba(255,255,255,0.3);
 }
 th{
-  padding: 20px 15px;
-  text-align: left;
-  font-weight: 500;
+  margin-left:25px;
+  font-weight: 500px;
   font-size: 12px;
   text-transform: uppercase;
 }
 td{
-  padding: 15px;
+  padding: 0px;
   text-align: left;
   vertical-align:middle;
   font-weight: 300;
   font-size: 12px;
-  border-bottom: solid 1px rgba(255,255,255,0.1);
 }
 
 

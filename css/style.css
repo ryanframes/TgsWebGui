@@ -15,14 +15,13 @@
     src: url(../fonts/Quicksand-Regular.ttf);
 }
 
-body {
+html,body {
   font-family: 'Quicksand', sans-serif;
+  height:100%;
 }
 
 .container {
-  width: 95%;
-  max-width: 1000px;
-  margin: 0 auto;
+	height:100%;
 }
 
 a {
@@ -296,4 +295,20 @@ input[type="text"], [type="password"], [type="search"]:focus {
 
 li.current {
     border-right:4px solid #4985e5;
+}
+
+.left {
+    width: 18%;
+    background-color: #4985e5;
+    float: left;
+}
+
+.right-wrapper {
+    width: 82%;
+    float: left;
+}
+.right {
+	background-color:#93F;
+    height: 100%;
+    position: absolute;
 }

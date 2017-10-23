@@ -6,9 +6,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/buttons.css">
-  <link rel="stylesheet" href="css/table.css">
+  
 </head>
-</style>
 <body>
   <header style="border-bottom:4px solid #4985e5;">
     <div style="padding-left:30px">
@@ -18,46 +17,83 @@
 	    <h1 class="logo">Halaman Admin Perusahaan</h1>      
     </div>
   </header>
-<div style="width=1020px; height:90%;">
+<div style="width=1020px; height:91%;">
 	<div style="float:left; width:18%; height:100%; background-color:#4985e5;" >
     	<div style="width:100%;height:200px;background-image:url(img/ZSoft-Gif.gif);background-repeat:no-repeat;background-size:70% 80%;background-position:center;">
         </div>
         <center style="width:auto; margin:5px 5px 30px 5px;color:#FFF;"><b>PT. Integrated System Consultant</b></center>
         <ul class="pnl_login">
             <li><a href="p_home.html" style="background:url(img/icons8-Home-26.png) no-repeat 7px; background-position:left;padding-left:25px;">Dashboard</a></li>
-            <li><a href="#p_profil.html" style="background:url(img/icons8-Front%20Desk-20.png) no-repeat 7px; background-position:left;padding-left:25px;">Ubah Profil</a></li>
+            <li><a href="#" style="background:url(img/icons8-Front%20Desk-20.png) no-repeat 7px; background-position:left;padding-left:25px;">Ubah Profil</a></li>
             <li><a href="p_loker.html" style="background:url(img/job.png) no-repeat 7px; background-position:left;padding-left:25px;">Pasang Loker</a></li>
-            <li class="current"><a href="#" style="background:url(img/icons8-Employee-20.png) no-repeat 7px; background-position:left;padding-left:25px;">Daftar Pelamar Kerja</a></li>
+            <li  class="current"><a href="p_loker_application.html" style="background:url(img/icons8-Employee-20.png) no-repeat 7px; background-position:left;padding-left:25px;">Daftar Pelamar Kerja</a></li>
             <li><a href="index.html" style="background:url(img/logout.png) no-repeat 7px; background-position:left;padding-left:25px;">Log Out</a></li>
         </ul>
     </div>
-    <div style="width:100%; height:100%;">
-    	<div style="width:100%;height:100%;">
-            <div style="border-bottom:2px solid #418ff4"><center style="padding-top:25px;margin:auto 0 25px 0;"><b>- Daftar Pelamar Kerja -</b></center></div>
-            <div class="container" style="background-color:#000;margin-left:18%;width:250px;">
-            <div class="tbl-header">
-            <table cellpadding="0" cellspacing="0" border="0">
-              <thead>
-                <tr>
-                  <th>Daftar Lowongan Kerja</th>
-                </tr>
-              </thead>
-            </table>
-            <div class="tbl-header">
-            <table cellpadding="0" cellspacing="0" border="0">
-              <thead>
-                <tr>
-                  <th>Daftar Pelamar Kerja</th>
-                </tr>
-              </thead>
-            </table>
-          </div>
-
-		</div>
-	</div>
+	
+    <div style="float:left;width:82%;margin-top:5px;">
+        <table style="width:100%" border="2px">
+            <tr bgcolor="#5ff441">
+                <th width="30%">Daftar Lowongan Kerja</th>
+                <th colspan="4">Daftar Pelamar Kerja</th> 
+            </tr>
+            <tr>
+                <td>1. Junior Web Developer</td>
+                <td colspan="4" style="padding-left:10px"><b>Januar Fahlevi</b></td>
+            </tr>
+            <tr bgcolor="#42f48c">
+                <td>2. Senior Web Developer</td>
+                <td width="9%" align="center">S1</td>
+                <td width="8%"  align="center">20 Th</td>
+                <td width="43%" align="center">PT. Koraja Birajasa (2006-2009)</td>
+                <td width="10%" align="center"><input type="submit" value="Detail" class="btn_profil_v" style="width:80%"></td>
+            </tr>
+            <tr>
+                <td>3. Junior Java Developer</td>
+                <td colspan="4" style="padding-left:10px"><b>Akbar Husein</b></td>
+            </tr>
+            <tr bgcolor="#42f48c">
+            	<td></td>
+                <td align="center">D3</td>
+                <td align="center">19 Th</td>
+                <td align="center">Fresh Graduate</td>
+                <td align="center"><input type="submit" value="Detail" class="btn_profil_v" style="width:80%"></td>
+            </tr>
+            <tr>
+            	<td></td>
+                <td colspan="4" style="padding-left:10px"><b>Amir Basri</b></td>
+            </tr>
+            <tr bgcolor="#42f48c">
+            	<td></td>
+                <td align="center">D3</td>
+                <td align="center">19 Th</td>
+                <td align="center">Fresh Graduate</td>
+                <td align="center"><input type="submit" value="Detail" class="btn_profil_v" style="width:80%"></td>
+            </tr>
+            <tr>
+            	<td></td>
+                <td colspan="4" style="padding-left:10px"><b>Ahmad Najib Sholihin</b></td>
+            </tr>
+            <tr bgcolor="#42f48c">
+            	<td></td>
+                <td align="center">S1</td>
+                <td align="center">24 Th</td>
+                <td align="center">PT. Keramik Indo Jaya (2005-2007)</td>
+                <td align="center"><input type="submit" value="Detail" class="btn_profil_v" style="width:80%"></td>
+            </tr>
+            <tr>
+            	<td></td>
+                <td colspan="4" style="padding-left:10px"><b>Rizki Hasan</b></td>
+            </tr>
+            <tr bgcolor="#42f48c">
+            	<td></td>
+                <td align="center">D3</td>
+                <td align="center">21 Th</td>
+                <td align="center">PT. Gersik Mandiri (2007-2008)</td>
+                <td align="center"><input type="submit" value="Detail" class="btn_profil_v" style="width:80%"></td>
+            </tr>
+        </table>
+    </div>
 </div>
 </body>
-<script>
-	CKEDITOR.replace( 'editor1' );
-</script>
 </html>

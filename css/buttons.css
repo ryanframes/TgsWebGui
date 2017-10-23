@@ -45,3 +45,20 @@
 .btn_simpan:hover {
 	background-color: #f45f36;
 }
+
+.btn_profil_v {
+	font-family: 'Quicksand';
+	background:no-repeat url(../img/icons8-High%20Importance-20.png) 7px;
+	color:white;
+	border:1px solid #CCCCCC;
+	background-color:#f44336;
+	box-sizing:border-box;
+	border-radius:2px;
+	padding-top: 8px;
+	padding-left:25px;
+	padding-bottom:8px;
+}
+
+.btn_profil_v:hover {
+	background-color: #f45f36;
+}
