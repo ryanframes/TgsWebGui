@@ -33,7 +33,7 @@ label:before {
 }
 
 label[for*='1']:before { content: url(../img/icons8-Employee-20.png); }
-label[for*='2']:before { content: url(../img/icons8-Front%20Desk-20.png); }
+label[for*='2']:before { content: url(../img/icons8-Lock-20.png); }
 label:hover {
   color: #888;
   cursor: pointer;

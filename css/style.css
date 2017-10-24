@@ -200,6 +200,19 @@ input[type="text"], [type="password"]{
 	opacity:0.75;
 }
 
+input[type="file"] {
+    display: none;
+}
+.custom-file-upload {
+    border: 1px solid #87e0e5;
+    display: inline-block;
+    padding: 6px 12px;
+	padding-left:30px;
+    cursor: pointer;
+	background:url(../img/icons8-Upload%20to%20the%20Cloud-20.png) no-repeat 7px;
+	color:#000;
+}
+
 textarea {
 	font-family: 'Quicksand';
 	width:300px;
