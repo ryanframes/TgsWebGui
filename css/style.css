@@ -1,6 +1,6 @@
-/* colors -> https://coolors.co/e54b4b-ebebd3-464655-e4b363-e8e9eb */
-
+/* colors -> https://coolors.co/e54b4b-ebebd3-464655-e4b363-e8e9eb 
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+*/
 
 #stretch{
 /* Will stretch to specified width/height */
@@ -17,6 +17,7 @@
 
 html,body {
   font-family: 'Quicksand', sans-serif;
+  src: url(../fonts/Quicksand-Regular.ttf);
   height:100%;
 }
 
@@ -64,6 +65,7 @@ header::after {
   transition: -webkit-clip-path ease-in-out 700ms;
   transition: clip-path ease-in-out 700ms;
   transition: clip-path ease-in-out 700ms, -webkit-clip-path ease-in-out 700ms;
+  padding-right:30px;
 }
 
 .site-nav--open {
@@ -255,6 +257,7 @@ input[type="text"], [type="password"], [type="search"]:focus {
 }
 .text_cari {
 	font-family: 'Quicksand';
+	src: url(../fonts/Quicksand-Regular.ttf);
 	width:300px;
 	border:1px solid #87e0e5;
 	box-sizing:border-box;
@@ -324,4 +327,18 @@ li.current {
 	background-color:#93F;
     height: 100%;
     position: absolute;
+}
+
+#page {
+	min-height:100%;
+}
+
+#content
+{
+    height: auto;
+    width: 98.5%;
+    position: absolute;
+    top: 70px;
+    bottom: 0;
+	overflow:auto;
 }

@@ -32,8 +32,12 @@ label:before {
   margin-right: 10px;
 }
 
-label[for*='1']:before { content: url(../img/icons8-Employee-20.png); }
-label[for*='2']:before { content: url(../img/icons8-Lock-20.png); }
+.tab_inf[for*='1']:before { content: url(../img/icons8-Employee-20.png); }
+.tab_inf[for*='2']:before { content: url(../img/icons8-Lock-20.png); }
+
+.tab_resume[for*='1']:before { content: url(../img/icons8-Resume-20.png); }
+.tab_resume[for*='2']:before { content: url(../img/icons8-Documents-20.png); }
+
 label:hover {
   color: #888;
   cursor: pointer;

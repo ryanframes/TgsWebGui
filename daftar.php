@@ -12,7 +12,7 @@
 <body>
   <header style="border-bottom:4px solid #4985e5;">
     <div class="container">
-      <h1 class="logo"><a href="index.html">lowongankerja.co.id</a></h1>
+      <h1 class="logo" style="padding-left:30px"><a href="index.html">lowongankerja.co.id</a></h1>
     </div>
   </header>
   

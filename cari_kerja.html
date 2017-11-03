@@ -2,40 +2,35 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>LowonganKerja.co.id | Cari Pekerjaan</title>  
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">  
+  <title>LowonganKerja.co.id | Dashboard Pencari Kerja</title>  
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/buttons.css">
 </head>
-
 <body>
+<div id="page">
   <header style="border-bottom:4px solid #4985e5;">
-    <div class="container">
-    
-      <h1 class="logo"><a href="#">lowongankerja.co.id</a></h1>
-      
-      <nav class="site-nav">
-          <ul>
-            <li><a href=""><i class="fa fa-home site-nav--icon"></i>Home</a></li>
-            <li><a href="daftar.php"><i class="fa fa-pencil site-nav--icon"></i>Daftar</a></li>
-            <li><a href="pencari_kerja/pk_login.php"><i class="fa fa-info site-nav--icon"></i>Pencari Kerja</a></li>
-            <li><a href=""><i class="fa fa-usd site-nav--icon"></i>Perusahaan</a></li>
-            <li><a href=""><i class="fa fa-envelope site-nav--icon"></i>Kontak Kami</a></li>
-          </ul>
+    <div style="padding-left:30px;">
+      <h1 class="logo"><a href="../index.html">lowongankerja.co.id</a></h1>      
+      <nav class="site-nav" style="padding-right:10px">
+			<input type="text" style="font-size:18px;height:auto;width:150px;" name="lokasi" placeholder="Lokasi Kerja"><input type="text" style="font-size:18px;height:auto;width:300px;" name="katakunci" placeholder="Kata Kunci"><input type="submit" class="btn_cari" style="padding-top:1px;padding-bottom:1px;font-size:18px" value="Cari">
       </nav>
-      
-      <div class="menu-toggle">
-        <div class="hamburger"></div>
-      </div>
     </div>
   </header>
-<p>
-<footer>
-<center>
-	© 2017 LowonganKerja.co.id | Hak cipta dilindungi.
-</center>
-</footer>
+  <div id="content">
+  <div style="width:34.75%; height:93%;float:left;border-right:2px solid #000" >
+    <div style="border-bottom:2px solid #4985e5">
+    <center style="padding-top:25px;margin:auto 0 25px 0;"><b>- Daftar Lowongan Pekerjaan -</b></center>
+    </div>
+  </div>
+  <div style="width:65%; height:93%; float:right" >
+    <div style="border-bottom:2px solid #4985e5">
+    <center style="padding-top:25px;margin:auto 0 25px 0;"><b>- Detail Lowongan Pekerjaan -</b></center>
+    </div>
+  </div>
+  <footer>
+  	Lowongankerja.co.id
+  </footer>
+</div>
 </body>
-<script src='js/jquery.min.js'></script>
-<script  src="js/index.js"></script>
+
 </html>
