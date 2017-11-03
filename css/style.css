@@ -342,3 +342,38 @@ li.current {
     bottom: 0;
 	overflow:auto;
 }
+
+.job_list {
+	border-bottom:solid 2px #4985e5;
+}
+.job_title {
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.job_det {
+	font-size:13px;
+}
+
+.job_det_title {
+	font-size:25px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.job_det_pt {
+	font-size:20px;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:10px 0 15px 0;
+}
+
+.job_det_date {
+	font-size:17px;
+	border-top:2px solid #000;
+	border-bottom:2px solid #000;
+}
+
+.job_det_desc {
+	
+}
