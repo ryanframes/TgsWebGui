@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>LowonganKerja.co.id | Dashboard Pencari Kerja</title>  
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/buttons.css">
+  <link rel="stylesheet" href="../css/DatePickerX.css">
+  <link rel="stylesheet" href="../css/tab.css">
+</head>
+	<script src="../js/DatePickerX.js"></script>
+    <script src="../ckeditor/ckeditor.js"></script>
+<style>
+	body, html {
+		height:100%;
+	}
+</style>
+<body>
+  <header style="border-bottom:4px solid #4985e5;">
+    <div style="padding-left:30px;">
+      <h1 class="logo"><a href="../index.html">lowongankerja.co.id</a></h1>      
+      <nav class="site-nav" style="padding-right:10px">
+      	<form action="../cari_kerja.html">
+			<input type="text" style="height:25px; font-size:12px;width:150px;" name="lokasi" placeholder="Lokasi Kerja"><input type="text" style="font-size:12px;height:25px;width:300px;" name="katakunci" placeholder="Kata Kunci"><input type="submit" class="btn_cari" style="padding-top:2px;padding-bottom:2px;font-size:14px" value="Cari">
+        </form>
+      </nav>
+    </div>
+    <!--
+    <div style="width:50%;margin-left:50%;background-color:#0C0;">
+	    <h1 class="logo">Halaman Admin Pencari Kerja</h1>      
+    </div>
+    -->
+  </header>
+<div style="width=1020px; height:90%;">
+	<div style="float:left; width:18%; height:100%; background-color:#4985e5;" >
+    	<div style="width:100%;height:200px;background-image:url(../img/Pas-Foto.jpg);background-repeat:no-repeat;background-size:50% 80%;background-position:center;">
+        </div>
+        <center style="width:auto; margin:5px 5px 30px 5px;color:#FFF;"><b>Kristina Aprilia Putri</b></center>
+        <ul class="pnl_login">
+	        <li><a href="pk_home.html" style="background:url(../img/icons8-Home-26.png) no-repeat 7px; background-position:left;padding-left:25px;">Dashboard</a></li>
+            <li class="current"><a href="pk_profil.html" style="background:url(../img/icons8-Front%20Desk-20.png) no-repeat 7px; background-position:left;padding-left:25px;">Ubah Profil</a></li>
+            <li><a href="pk_upload_resume.html" style="background:url(../img/icons8-Documents-20.png) no-repeat 7px; background-position:left;padding-left:25px;">Resume Diunggah</a></li>
+            <li><a href="pk_riwayat.html" style="background:url(../img/doc.png) no-repeat 7px; background-position:left;padding-left:25px;">Riwayat Lamaran</a></li>
+            <li><a href="../index.html" style="background:url(../img/logout.png) no-repeat 7px; background-position:left;padding-left:25px;">Log Out</a></li>
+        </ul>
+    </div>
+    <div style="width:100%; height:auto;">
+    	<div style="width:100%;height:100%;">
+        	<div style="border-bottom:2px solid #418ff4"><center style="padding-top:25px;margin:auto 0 25px 0;"><b>- Ubah Profil -</b></center></div>
+			<div class="container" style="padding-left:400px;width:auto;height:auto; padding-top:25px;margin:10px 10px 10px -90px">
+            <br>
+            <input id="tab1" type="radio" name="tabs" checked>
+            <label for="tab1" style="width:43%" class="tab_inf">Informasi Pencari Kerja</label>
+            <input id="tab2" type="radio" name="tabs">
+            <label for="tab2" style="width:43%" class="tab_inf">Informasi Login</label>
+            	<section id="content1">
+                    <form style="padding-top:20px;" >
+                        Nama Lengkap :<p><input placeholder="Nama Lengkap" name="nama" type="text"; style="width:100%;">
+                        <p>
+                        <!-- untuk membuat datepicker -->
+                        Tanggal Lahir : <br>
+                        <label class="real" style="margin-left:-25px">
+                            <input type="text" name="realDPX-min" placeholder="Tanggal Lahir">
+                        </label>
+                        <label class="real" hidden="true">
+                            <input type="text" name="realDPX-max" placeholder="Choice end date">
+                        </label>
+                        <br>
+                        Jenis Kelamin :<p>
+                        <select title="Jenis Kelamin" class="styled-select" style="width:100%;">
+                            <option value="0" disabled selected>Pilih</option>
+                            <option value="lk">Laki-laki</option>
+                            <option value="pr">Perempuan</option>
+                        </select>
+                        <p>
+                        Alamat Lengkap : <p>
+                        <textarea placeholder="Alamat Lengkap" name="alamat" cols="40" rows="5" style="width:100%"></textarea><p>
+                        Kota, Kode Pos :<p>
+                        <input type="text" placeholder="Kota, Kode Pos" name="kota" style="width:100%"><p>
+                        <p>
+                        No. Telpon : <p>
+                        <input type="text" style="width:100%" placeholder="No. Telpon">
+                        <p>
+                        Status Pernikahan :<p>
+                        <select title="Status Pernikahan" class="styled-select" style="width:100%;">
+                            <option value="0" disabled selected>Pilih</option>
+                            <option value="sgl">Belum Kawin</option>
+                            <option value="kwn">Kawin</option>
+                        </select>
+                        <p>
+                        Pendidikan Terakhir :<p>
+                        <select title="Pendidikan Terakhir" class="styled-select" style="width:100%;">
+                            <option value="0" disabled selected>Pilih</option>
+                            <option value="sd">SD</option>
+                            <option value="smp">SMP</option>
+                            <option value="smk">SMA/K</option>
+                            <option value="dp">Diploma</option>
+                            <option value="sj">Sarjana</option>
+                        </select>
+                        <p>
+                        Riwayat Pengalaman Kerja : <p>
+                        <textarea placeholder="Riwayat Pengalaman Kerja" name="riwayat" cols="40" rows="5" style="width:100%"></textarea><p>
+                        Keahlian : <p>
+                        <textarea placeholder="Keahlian" name="keahlian" cols="40" rows="5" style="width:100%"></textarea><p>
+                        Foto : <p>
+                        <input type="text" placeholder="Upload" readonly id="file_name">
+                        <label for="file-upload" class="custom-file-upload">
+                        	Upload
+                        </label>
+                        <input id="file-upload" type="file" onchange="document.getElementById('file_name').value = this.value.split('\\').pop().split('/').pop()">
+                        <p>
+                        <input type="submit" class="btn_simpan" value="Simpan" style="width:100%;">
+                </form>
+                </section>
+                <section id="content2">
+	             <form style="padding-top:20px;" >
+                    Email :<p><input placeholder="Email" name="email" type="text"; style="width:100%;">
+                    <p>
+                    Password : <p>
+                    <input type="password" style="width:100%" placeholder="Password">
+                    <p>
+                    Verifikasi Password : <p>
+                    <input type="password" style="width:100%" placeholder="Verifikasi Password">
+                    <p>
+                    <input type="submit" class="btn_simpan" value="Simpan" style="width:100%;">
+                </form>
+             </section>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+	window.addEventListener('DOMContentLoaded', function()
+	{
+		var $min = document.querySelector('.real [name="realDPX-min"]'),
+			$max = document.querySelector('.real [name="realDPX-max"]');
+
+		$min.DatePickerX.init({
+			mondayFirst: true,
+			minDate    : new Date(2017, 8, 13),
+			maxDate    : $max
+		});
+
+		$max.DatePickerX.init({
+			mondayFirst: true,
+			minDate    : $min,
+			//maxDate    : new Date(2017, 4, 25)
+		});
+
+	});
+	CKEDITOR.replace( 'editor1' );
+</script>
+</html>

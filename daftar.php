@@ -27,7 +27,7 @@
     <label for="tab2" style="width:43%">Perusahaan</label>
     
     <section id="content1">
-        <form style="padding-top:20px;" action="pencari_kerja/pk_home.html">
+        <form style="padding-top:20px;" action="pencari_kerja/pk_profil.html">
             <input placeholder="Nama Lengkap" name="nama" type="text"; style="width:90%;">
             <br><br>
             <input placeholder="Email" name="email" type="text"; style="width:90%;">
