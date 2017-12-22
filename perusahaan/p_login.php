@@ -29,6 +29,8 @@
             <br><br>
             <input type="submit" class="btn_simpan" value="Masuk" style="width:90%;" formaction="p_home.html">
         </form>
+        <br>
+        <a href="../lupa_pass.php" style="color:#00C;font-weight:bold">Lupa Password ? Klik disini</a>
     </section>	
    </main>
 <footer>

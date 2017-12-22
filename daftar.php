@@ -27,7 +27,7 @@
     <label for="tab2" style="width:43%">Perusahaan</label>
     
     <section id="content1">
-        <form style="padding-top:20px;" >
+        <form style="padding-top:20px;" action="pencari_kerja/pk_home.html">
             <input placeholder="Nama Lengkap" name="nama" type="text"; style="width:90%;">
             <br><br>
             <input placeholder="Email" name="email" type="text"; style="width:90%;">
@@ -39,7 +39,7 @@
     </section>
     
     <section id="content2">
-		<form style="padding-top:20px;" >
+		<form style="padding-top:20px;" action="perusahaan/p_home.html">
         	<input placeholder="Nama Perusahaan" name="usaha_nama" type="text"; style="width:90%;">
             <br><br>
             <input placeholder="Telepon" name="usaha_telp" type="text"; style="width:90%;">

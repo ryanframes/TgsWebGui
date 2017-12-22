@@ -346,6 +346,12 @@ li.current {
 .job_list {
 	border-bottom:solid 2px #4985e5;
 }
+
+.job_list:hover {
+	background:#d4e1f4;
+	cursor:pointer;
+}
+
 .job_title {
 	text-transform:uppercase;
 	font-weight:bold;

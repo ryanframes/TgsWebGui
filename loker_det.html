@@ -2,46 +2,42 @@
 <html >
 <head>
   <meta charset="UTF-8">
-  <title>LowonganKerja.co.id | Pencarian Kerja</title>  
+  <title>LowonganKerja.co.id | Detail Pekerjaan</title>  
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/buttons.css">
+  <link rel="stylesheet" href="css/tab.css">
 </head>
 <body>
-<div id="page">
   <header style="border-bottom:4px solid #4985e5;">
     <div style="padding-left:30px;">
-      <h1 class="logo" style="padding-top:10px"><a href="index.html">lowongankerja.co.id</a></h1>      
-      <nav class="site-nav" style="padding-right:10px;padding-top:5px">
-		<form action="cari_kerja.html">
+      <h1 class="logo"><a href="index.html">lowongankerja.co.id</a></h1>      
+      <nav class="site-nav" style="padding-right:10px">
+      	<form action="../cari_kerja.html">
 			<input type="text" style="height:25px; font-size:12px;width:150px;" name="lokasi" placeholder="Lokasi Kerja"><input type="text" style="font-size:12px;height:25px;width:300px;" name="katakunci" placeholder="Kata Kunci"><input type="submit" class="btn_cari" style="padding-top:2px;padding-bottom:2px;font-size:14px" value="Cari">
         </form>
       </nav>
     </div>
+    <!--
+    <div style="width:50%;margin-left:50%;background-color:#0C0;">
+	    <h1 class="logo">Halaman Admin Pencari Kerja</h1>      
+    </div>
+    -->
   </header>
-  <div id="content" style="border-bottom:2px solid #4985e5">
-      <div style="width:34.75%; height:100%;float:left;" >
-        <div style="border-bottom:2px solid #4985e5">
-            <center style="padding-top:25px;margin:auto 0 25px 0;"><b>- Daftar Lowongan Pekerjaan -</b></center>
-        </div>
-        <div class="job_list">
-        	<a href="#">
-            <div class="job_title">Senior Java Programmer</a></div>
-            <div class="job_det">PT.Accurate Indonesia<br>Jakarta Utara<br><br>12 Juni 2017</div>
-            </a>
-        </div>
-        <div class="job_list">
-            <div class="job_title">Senior .NET Developer / Programmer (VB.NET / C# / ASP.NET)</div>
-            <div class="job_det">NMS Recruitment<br>Jakarta Pusat<br><br>16 Juni 2017</div>
-        </div>
-      </div>
-      <div style="width:65%; height:auto; float:right;border-left:solid 2px #4985e5" >
-        <div style="border-bottom:2px solid #4985e5">
+<div style="width=1020px; height:auto; background:#a3a5a8">
+    <div style="width:70%; height:100%;margin:0 auto; padding-left:10px; padding-right:10px; background:#FFF">
+        <div style="border-bottom:2px solid #4985e5;">
         <center style="padding-top:25px;margin:auto 0 25px 0;"><b>- Detail Lowongan Pekerjaan -</b></center>
         </div>
-        <div class="job_det_title">Senior Java Programmer</div>
-        <div class="job_det_pt">PT. Accurate Indonesia</div>
+        <div style="padding-top:10px; margin:auto;float:left">
+        <img src="img/ZSoft-Gif.gif" height="66px" width="60px">
+        </div>
+        <div style="padding-left:-1000px;">
+        <div class="job_det_title" style="text-align:center">Senior Java Programmer</div>
+        <div class="job_det_pt" style="text-align:center">PT. Accurate Indonesia</div>
+        </div>
         <div class="job_det_date">Jakarta Utara, 12 Juni 2017</div>
-        <div>
+        <div style="padding-left:20px">
         <b>Qualifications:</b>
         <ul>
 			<li>Minimum Bachelor Degree from Technical Information, System Information, or Mathematics major from reputable University</li>
@@ -103,8 +99,8 @@ If you feel that you can meet the qualification and up for the challenge, please
             </table>
         </div>
       </div>
-  </div>
+        </div>
+    </div>
 </div>
 </body>
-
 </html>
